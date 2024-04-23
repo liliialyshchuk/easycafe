@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Easycafe</title>
+    <title>SunnyCafe</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,14 +11,41 @@
   </head>
 
   <body>
-    <%= link_to 'home',    root_path %> <br/>
-    <%= link_to 'about',   about_path %> <br/>
-    <%= link_to 'gallery', gallery_path %> <br/>
-    <%= link_to 'contact', contact_path %> <br/>
-    <%= link_to 'vacancy', vacancy_path %> <br/>
-    <%= link_to 'cart',    cart_path %> <br/>
-    <%= link_to 'menu',    menu_path %> <br/>
-    <%= link_to 'account', account_path %> <br/>
-    <%= yield %>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">First Category</a></li>
+      <li><a href="#!">Second Category</a></li>
+      <li><a href="#!">Third Category</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">SunnyCafe</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Vacancy</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        </div>
+      <div class="container">
+    </nav>
+    <%# <%= link_to 'home',    root_path %> 
+    <%# <%= link_to 'about',   about_path %> 
+    <%# <%= link_to 'gallery', gallery_path %> 
+    <%# <%= link_to 'contact', contact_path %> 
+    <%# <%= link_to 'vacancy', vacancy_path %> 
+    <%# <%= link_to 'cart',    cart_path %> 
+    <%# <%= link_to 'menu',    menu_path %> 
+    <%# <%= link_to 'account', account_path %> 
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
