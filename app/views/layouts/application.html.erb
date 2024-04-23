@@ -21,93 +21,12 @@
   </head>
 
   <body>
-    <header>
-      <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">Pasta</a></li>
-        <li><a href="#!">Pizza</a></li>
-        <li><a href="#!">Main Dish</a></li>
-        <li><a href="#!">Grill</a></li>
-        <li><a href="#!">Fish & Seafood</a></li>
-        <li><a href="#!">Dessert</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">Drinks</a></li>
-      </ul>
-      <ul id="dropdown2" class="dropdown-content">
-        <li><a href="#!">Pasta</a></li>
-        <li><a href="#!">Pizza</a></li>
-        <li><a href="#!">Main Dish</a></li>
-        <li><a href="#!">Grill</a></li>
-        <li><a href="#!">Fish & Seafood</a></li>
-        <li><a href="#!">Dessert</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">Drinks</a></li>
-      </ul>
-      <nav>
-        <div class="container">
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">SunnyCafe</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Vacancy</a></li>
-              <li><a href="#">Cart</a></li>
-              <li><a href="#">My Account</a></li>
-              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
-            </ul>
-            <ul class="sidenav" id="mobile-demo">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Vacancy</a></li>
-              <li><a href="#">Cart</a></li>
-              <li><a href="#">My Account</a></li>
-              <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <%# <%= link_to 'home',    root_path %> 
-    <%# <%= link_to 'about',   about_path %> 
-    <%# <%= link_to 'gallery', gallery_path %> 
-    <%# <%= link_to 'contact', contact_path %> 
-    <%# <%= link_to 'vacancy', vacancy_path %> 
-    <%# <%= link_to 'cart',    cart_path %> 
-    <%# <%= link_to 'menu',    menu_path %> 
-    <%# <%= link_to 'account', account_path %> 
+    <%= render 'layouts/header' %>
     <main>
       <div class="container">
         <%= yield %>
       </div>
     </main>
-
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Sunny Cafe</h5>
-            <p class="grey-text text-lighten-4"> We accept orders <br> From 11:00 - 21:00 <br> Delivery and Pickup </p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Useful info</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Order Delivery</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Public Offer</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © 2024 Sunny Cafe
-        <a class="grey-text text-lighten-4 right" href="#">Tel: +380-67-123-45-67</a>
-        </div>
-      </div>
-    </footer>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
