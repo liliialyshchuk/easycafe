@@ -6,33 +6,66 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- ADD THIS TO INCLUDE JQUERY JS LIBRARY BEFORE MATERIALIZE -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- END ADD -->
+
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <!-- ADD THIS TO INCLUDE MATERIALIZE LIBRARIES AFTER JQUERY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- END ADD -->
+
   </head>
 
   <body>
     <header>
       <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">First Category</a></li>
-        <li><a href="#!">Second Category</a></li>
-        <li><a href="#!">Third Category</a></li>
+        <li><a href="#!">Pasta</a></li>
+        <li><a href="#!">Pizza</a></li>
+        <li><a href="#!">Main Dish</a></li>
+        <li><a href="#!">Grill</a></li>
+        <li><a href="#!">Fish & Seafood</a></li>
+        <li><a href="#!">Dessert</a></li>
         <li class="divider"></li>
-        <li><a href="#!">three</a></li>
+        <li><a href="#!">Drinks</a></li>
+      </ul>
+      <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#!">Pasta</a></li>
+        <li><a href="#!">Pizza</a></li>
+        <li><a href="#!">Main Dish</a></li>
+        <li><a href="#!">Grill</a></li>
+        <li><a href="#!">Fish & Seafood</a></li>
+        <li><a href="#!">Dessert</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Drinks</a></li>
       </ul>
       <nav>
         <div class="container">
           <div class="nav-wrapper">
             <a href="#!" class="brand-logo">SunnyCafe</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Gallery</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">Vacancy</a></li>
-              <li><a href="#">Menu</a></li>
               <li><a href="#">Cart</a></li>
               <li><a href="#">My Account</a></li>
               <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+            <ul class="sidenav" id="mobile-demo">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Vacancy</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">My Account</a></li>
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
           </div>
         </div>
