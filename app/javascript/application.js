@@ -12,5 +12,7 @@ import "controllers"
 $(document).ready(function() {
     $(".dropdown-trigger").dropdown();
     $('.sidenav').sidenav();
+    $('.materialboxed').materialbox();
+    $('.slider').slider();
   });
 
