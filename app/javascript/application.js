@@ -16,3 +16,8 @@ $(document).ready(function() {
     $('.slider').slider();
   });
 
+// $(document).on('turbolinks:load', function() {
+//     $('#fade-out-target').fadeOut(4000);
+//     console.log('gggg');
+// });
+

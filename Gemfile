@@ -25,6 +25,7 @@ gem 'materialize-sass', '~> 1.0.0'
 gem 'material_icons' 
 gem 'jquery-rails'
 
+#authorization
 gem 'devise'
 gem 'devise-i18n'
 
