@@ -29,6 +29,8 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'devise-i18n'
 
+gem 'activeadmin'
+
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
 gem "bootsnap", require: false
