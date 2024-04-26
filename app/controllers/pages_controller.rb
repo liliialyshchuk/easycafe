@@ -8,15 +8,19 @@ class PagesController < ApplicationController
     def contact 
     end
 
-    def vacancy 
-    end
-
     def cart 
     end
 
     def menu 
     end
 
-    def account 
+    def delivery 
     end
+
+    def policy 
+    end
+
+    def offer 
+    end
+
 end
