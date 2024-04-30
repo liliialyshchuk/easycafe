@@ -2,7 +2,30 @@
 
 en:
   devise:
+    login: 'Login'
+    sign_up: 'Sign up'
+    edit: 'Edit'
+    new_password: 'New password'
+    forgot_password: 'Forgot your password?'
+    change_password: 'Change your password'
+    placeholder:
+      enter_your_email: 'Enter your Email'
+      enter_your_password: 'Enter your Password'
+      enter_your_password_6: 'Enter your Password (6 characters minimum)'
+      repeat_your_password: 'Repeat your Password'
+      confirm_password: 'Please confirm your Password'
+      leave_blank_password: '(leave blank if you do not want to change it)'
+      minimum_charachers: 'characters minimum'
+    button:
+      log_in: 'Log In'
+      sign_up: 'Sign Up'
+      update_profile: 'Update Profile'
+      back: 'Back'
+      send_password_instructions: 'Send me reset password instructions'
+      change_password: 'Change my password'
+
     confirmations:
+      confirm_password: 'Confirm new password'
       confirmed: "Your email address has been successfully confirmed."
       send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
       send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."

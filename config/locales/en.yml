@@ -1,31 +1,261 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
-
 en:
-  hello: "Hello world"
+  site_name: 'Sunny Cafe'
+
+
+
+  header:
+    menu:
+      home: 'Home'
+      about: 'About'
+      gallery: 'Gallery'
+      contact: 'Contact'
+      cart: 'Cart'
+      profile: 'My Profile'
+      menu: 'Menu'
+    dropdown_menu:
+        pasta: 'Pasta'
+        pizza: 'Pizza'
+        main_dish: 'Main Dish'
+        grill: 'Grill'
+        fish: 'Fish & Seafood'
+        dessert: 'Dessert'
+        drinks: 'Drinks'
+        all_menu: 'All Menu'
+    button:
+      logout: 'Logout'
+      sign_up: 'Sign up'
+      login: 'Login'
+
+
+
+  footer:
+    button:
+      order_delivery: 'Order Delivery'
+      privace_policy: 'Privacy Policy'
+      public_offer: 'Public Offer'
+    info:
+      contact_tel: 'Telephone: +380-99-999-99-99'
+      useful_info: 'Useful Info'
+      order_delivery:
+          one_part: 'We accept orders'
+          two_part: 'From 11:00 AM - to 9:00 PM'
+          three_part: 'Delivery and Pickup'   
+
+
+
+  welcome:
+    sliders:
+      slider_1:
+        header: 'Come in!'
+        description: 'We are open'
+      slider_2:
+        header: 'Working hours'
+        description: 'From 11:00 - to 21:00'
+      slider_3:
+        header: 'What is Restaurant Week?'
+        description: 'And why you should participate?'
+      slider_4:
+        header: 'AWARD'
+        description: '2023 Winner'
+
+
+
+  menu:
+    menu_page: 'Menu'
+    description: 'Description'
+    price: 'Price'
+
+
+# PUBLIC OFFER PAGE
+  offer:
+    public_offer: 'Public Offer'
+    public_offer_text: 'The Internet store Sunny Cafe, located at the domain name www.beerclub10.if.ua, represented by the director, Oleksandr Oleksandrovich Gorban, valid on the basis of the Charter certifying the authority and its details, hereinafter referred to as the "Seller", publishes A public offer for the sale of the Product remotely. '
+
+    definition_of_terms: '1. Definition of terms'
+    definition_of_terms_list:
+      li_1_1: '1.1. Public offer (hereinafter - the "Offer") - the public offer of the Seller, addressed to an unspecified circle of persons, to conclude a contract for the sale of goods remotely with the Seller (hereinafter - the "Agreement") on the terms contained in this Offer, including all Appendices.'
+      li_1_2: '1.2. Ordering the Goods on the website of the online store – items specified by the Buyer from the range of Goods offered for sale, when placing an application for the purchase of the Goods on the website of the online store or through the Operator.'
+    
+    general_provisions: '2. General provisions'
+    general_provisions_list:
+      li_2_1: '2.1. The Buyers order of the Goods placed on the website of the online store means that the Buyer agrees with all the terms of this Offer.'
+      li_2_2: '2.2. The administration of the Internet store site has the right to make changes to the Offer without notifying the Buyer.'
+      li_2_3: '2.3. The validity period of the offer is not limited, unless otherwise indicated on the website of the online store.'
+      li_2_4: '2.4. The Seller provides the Buyer with complete and reliable information about the product, including information about the main consumer properties of the Product, the place of manufacture, as well as information about the warranty period and expiration date of the Product on the website of the online store, in the section name of the section.'
+
+    price_of_goods: '3. Price of the goods'
+    price_of_goods_list:
+      li_3_1: '3.1. The price for each item of the Product is indicated on the website of the online store.'
+      li_3_2: '3.2. The Seller has the right to unilaterally change the price for any item of the Product.'
+      li_3_3: '3.3. In the event of a price change for the ordered Product, the Seller undertakes to inform the Buyer about the change in the price of the Product within a number of days.'
+      li_3_4: '3.4. The Buyer has the right to confirm or cancel the Order for the purchase of the Goods, if the price has been changed by the Seller after placing the Order.'
+      li_3_5: '3.5. The Seller cannot change the price of the Goods paid by the Buyer.'
+      li_3_6: '3.6. The Seller indicates the cost of delivery of the Goods on the website of the online store or informs the Buyer when placing the order by the Operator.'
+      li_3_7: '3.7. The Buyers obligations to pay for the Goods are considered fulfilled from the moment the funds are received by the Seller.'
+      li_3_8: '3.8. Payments between the Seller and the Buyer for the Goods are made by the methods indicated on the website of the online store in the section of the order basket.'
+
+    processing_order: '4. Processing the Order'
+    processing_order_list:
+      li_4_1: '4.1. The Order of the Product is carried out by the Buyer through the Operator by phone number or through the service of the Internet store website.'
+      li_4_2: '4.2. When registering on the website of the online store, the Buyer undertakes to provide the following registration information:'
+      li_4_2_1: '4.2.1. surname, first name, patronymic of the Buyer or the person indicated by him (recipient);'
+      li_4_2_2: '4.2.2. the address to which the Goods should be delivered (if delivery to the Buyers address);'
+      li_4_2_3: '4.2.3. Email address;'
+      li_4_2_4: '4.2.4. contact phone'
+      li_4_3: '4.3. The name, quantity, assortment, article number, and price of the Product selected by the Buyer are indicated in the Buyers basket on the Internet store website.'
+      li_4_4: '4.4. If the Seller needs additional information, he has the right to request it from the Buyer. If the Buyer does not provide the necessary information, the Seller is not responsible for the Goods selected by the Buyer.'
+      li_4_5: '4.5. When placing an Order through the Operator (clause 4.1. of this Offer), the Buyer undertakes to provide the information specified in clause 4.2. of this Offer.'
+      li_4_6: '4.6. The Buyers acceptance of the terms of this Offer is carried out by entering the relevant data into the registration form on the website of the online store or when placing an Order through the Operator. After placing the Order through the Operator, data about the Buyer are registered in the Sellers database. After approving the Order of the selected Product, the Buyer provides the Operator with the necessary information in accordance with the procedure specified in clause 4.2. of this Offer.'
+      li_4_7: '4.7. The Seller is not responsible for the content and reliability of the information provided by the Buyer when placing the Order.'
+      li_4_8: '4.8. The buyer is responsible for the accuracy of the information provided when placing the Order.'
+      li_4_9: '4.9. A remote sales contract between the Seller and the Buyer is considered to have been concluded from the moment the Seller issues a cashiers or sales receipt or other document confirming payment for the Goods to the Buyer.'
+
+    hanvover_of_goods: '5. Delivery and handover of goods to the buyer'
+    hanvover_of_goods_list:
+      li_5_1: '5.1. The Seller provides the Buyer with services for the delivery of the Goods by one of the methods indicated on the website of the online store.'
+      li_5_2: '5.2. If the Contract for the purchase and sale of goods by remote method (hereinafter referred to as the Contract) is concluded with the condition of delivery of the Goods to the Buyer, the Seller is obliged to deliver the Goods to the place specified by the Buyer within the term established by the Contract, and if the place of delivery of the goods is not specified by the Buyer, then at his place residence or registration.'
+      li_5_3: '5.3. The place of delivery of the Goods is indicated by the Buyer when placing the Order for the purchase of the Goods.'
+      li_5_4: '5.4. The term of delivery of the Goods to the Buyer consists of the order processing term and the delivery term.'
+      li_5_5: '5.5. The delivered Goods are handed over to the Buyer, and in the absence of the Buyer - to any person who has presented a receipt or other document confirming the conclusion of the Agreement or registration of the delivery of the goods.'
+      li_5_6: '5.6. Information about the goods is brought to the Buyers attention in the technical documentation attached to the Goods, on labels, by marking or in another way accepted for certain types of goods.'
+      li_5_7: '5.7. Information on mandatory confirmation of conformity of the Goods is presented in the manner and in the manner established by the legislation of Ukraine on technical regulation, and includes information on the number of the document confirming such conformity, its validity period and the organization that issued it.'              
+
+
+# ORDER DELIVERY PAGE
+  delivery:
+    delivery_order: 'Delivery order'
+
+    general_information: 'General information'
+    general_information_text_1: 'You can place an order online from 11:00 a.m. to 9:00 p.m.'
+    general_information_text_2: 'To receive the Order, it is absolutely necessary to specify the telephone number of only Ukrainian telephone providers (we cannot call the Client who is not in Ukraine to the numbers of foreign operators).'
+    general_information_text_3: 'When placing an Order, you can leave any comment.'
+    general_information_text_4: 'The photo of the packaging presented on the website may differ from the actual packaging. For more accurate information, always refer to the actual packaging.'
+    general_information_text_5: 'Pay attention! Our dishes are made from fresh certified products for consumption by healthy people. Unfortunately, we cannot guarantee that guests who are allergic to certain spices or plants will not have them in our dishes. Therefore, we offer guests with such a private specificity a separate note when choosing dishes. Allergens: Eggs, fish, peanuts, soy, milk, nuts, celery, mustard, sesame, honey.'
+
+    return_of_goods: 'Return of goods'
+    return_of_goods_text_1: 'When receiving an order, you can always refuse any delivered product, in accordance with the Law of Ukraine on consumer rights.'
+    return_of_goods_text_2: 'According to the Law of Ukraine, we will not be able to return excise goods: alcoholic products.'
+    return_of_goods_text_3: 'According to the Law of Ukraine on the Protection of Consumer Rights, the return of goods is possible only on the condition that the Check and damaged Goods are preserved.'
+    return_of_goods_text_4: 'Law of Ukraine "On Protection of Consumer Rights"'
+    return_of_goods_text_5: 'Resolution on the implementation of certain provisions of the Law of Ukraine "On the Protection of Consumer Rights"'
+
+    price_of_goods: 'Price of goods'
+    price_of_goods_text_1: 'The prices for goods in the online store are the same as in the place where your order is collected, however, the basket is collected and taken through the cash register always on the day of delivery, so the actual amount of the order may differ if the price of the goods selected by you has changed.'
+    price_of_goods_text_2: 'Upon receipt of the order, you receive a fiscal receipt from the Institution, which confirms the cost of the goods.'
+    price_of_goods_text_3: 'You will be notified of a change in the price of the goods you have selected by SMS message or phone call.'
+    price_of_goods_text_4: 'Prices and in-store availability are subject to change, so the actual order amount may vary, especially if you chose next-day delivery. If the price changes by more than UAH 5 per item, or changes in the weight of the Goods sold "by weight" by more than +/- 200.'
+
+    courier_delivery: 'Courier delivery'
+    courier_delivery_text_1: 'Courier delivery involves delivery of the order to the entrance of an apartment building or to the gate of a private house.'
+    courier_delivery_text_2: 'Delivery to the door of the apartment (apartments, etc.) is carried out for an additional payment of UAH 5/floor.'
+    courier_delivery_text_3: 'Waiting time for the courier at your house - up to 10 minutes. In case of exceeding the waiting time by the courier, the cost is 1 minute - 3 hryvnias.'
+    courier_delivery_text_4: 'In case you cannot guarantee your presence during the entire time window, please contact the Administrator 0678888888.'
+    courier_delivery_text_5: 'Confirmation of receipt of your order will be sent to your registered e-mail.'
+
+    general_information: 'General information'
+
+    shipping_cost: 'Shipping cost'
+    shipping_cost_text_1: 'The cost of delivery depends on the delivery address.'
+    shipping_cost_text_2: 'The minimum cost of courier delivery in Lviv is UAH 100.'
+    shipping_cost_text_3: 'If the courier arrives at the clients address twice in the same time window, the client pays for each delivery (the possibility is agreed individually).'
+
+    order_cancellation: 'Order cancellation'
+    order_cancellation_text_1: 'The courier service reserves the right to cancel the order in case of impossibility of its delivery (floods, earthquakes, cataclysms, difficult traffic situation in the city, or if the address of the delivery point is located in an area that cannot be approached by car within a radius of 50 meters). In case of cancellation of the order, the Client can independently repeat the order on the website.'
+    order_cancellation_text_2: 'We reserve the right to inform Customers about the cancellation of orders by SMS (maximum 2 hours before the end of the selected delivery window).'
+    order_cancellation_text_3: 'If we are unable to contact you, the company reserves the right to move your order to the next delivery window or cancel it.'
+    order_cancellation_text_4: 'You can cancel the order or transfer it to another delivery window after placing it by calling +38 067 888 88 88.'
+
+    payment: 'Payment'
+    payment_text_1: 'Cash on delivery of the collected basket, based on the total amount of the order by check.'
+    payment_text_2: 'Please check the correctness of the rest immediately in the presence of the courier.'
+    payment_text_3: 'By bank card: when paying online on the website.'
+    payment_text_4: 'By non-cash payment: prepayment according to the invoice.'
+    payment_text_5: 'When paying for the Order online on the website, the delivery cost is UAH 29 in the central part of the city, and UAH 100 outside the central part of the city within Lviv.'
+
+    collection: 'Collection'
+    collection_text_1: 'Depending on the volume of the order and the categories of selected goods, your order will be packed in one or more packages (their cost is not added to your order).'
+    collection_text_2: 'During transportation, hot and warm dishes are placed in thermo-packages, which maintain the temperature required for the dishes.'
+    collection_text_3: 'The recommended time of eating dishes is 2 hours.'
+
+
+# PRIVACY POLICY PAGE
+  policy:
+    privacy_policy: 'Privacy policy of the website SunnyCafe'
+    last_update: 'Last update: 26/ 04 / 2024'
+    privacy_policy_text_1: 'This document describes the privacy policy of SunnyCafe, including all online services ("Resource") on the "Websites" sites.'
+    privacy_policy_text_2: '"SunnyCafe" processes personal information both as a processor and as a controller, according to '
+    privacy_policy_text_3: 'GDPR (General Data Protection Regulation)'
+
+    personal_data_collect: 'What personal data we collect and why we collect it'
+
+    comments: 'Comments'
+    comments_text_1: 'When visitors leave comments on the site, we collect the data displayed in the comment form, as well as the visitors IP addresses and the users browser agent string to help detect spam.'
+    comments_text_2: 'An anonymous string generated from your email address (also called a hash) can be provided to Gravatar to see if you are using it. The Gravatar privacy policy is available here: https://automattic.com/privacy/. Once your comment is approved, your profile picture will be visible to the public in the context of your comment.'
+
+    meida_files: 'Media files'
+    media_files_text_1: 'If you upload images to the site, you should avoid uploading images with embedded location data. Site visitors can download and extract any location data from images on the site.'
+    contact_forms: 'Contact forms'
+
+    cookies: 'Cookies'
+    cookies_text_1: 'If you leave a comment on our site, you can enable the storage of your name, email address and website in cookies. This is for your convenience so you do not have to re-enter your details the next time you leave a comment. These cookies will be stored for 1 year.
+                                                        If you have an account and are logged in to this site, we will set a temporary cookie to determine if your browser accepts cookies. This cookie does not contain personal data and is deleted when you close your browser.
+                                                        Cookies – are small text files that are stored on the users computer to remember them.We use *session cookies* and *persistent cookies*. Session cookies are deleted when the user closes the browser.
+                                                        The users web browser allows him to control and clear cookies on his computer. If the user refuses cookies, he can still use the Resource, but the ability to use some functions may be limited.
+                                                        When you log in, we will also set some cookies to save your login information and screen settings. Login cookies last for 2 days and screen settings cookies for 1 year. If you select "Remember me", your login will be stored for 2 weeks. If you log out of your account, the login cookies will be deleted.
+                                                        If you edit or publish an article, an additional cookie will be stored in your browser. This cookie contains no personal data and simply identifies the article you have just edited. It expires in 1 day.'
+
+    embedded_content: 'Embedded content from other websites'
+    embedded_content_text_1: 'Articles on this site may contain embedded content (for example: videos, images, articles, etc.). Embedded content from other sites behaves as if the user had visited another site.These sites may collect data about you, use cookies, embed additional third-party tracking systems, and monitor your interaction with this embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to the site.'
+
+    user_content: 'User content'
+    user_content_text_1: '• The processing of the users personal information is based on the users consent to this, which the user gives us before we collect the information.'
+    user_content_text_2: '• The user can withdraw his consent at any time. You can usually do this on your profile page.'
+    user_content_text_3: '• The withdrawal of consent will not affect the lawfulness of the processing before that.'
+
+    personal_information_use: 'How do we use user personal information?'
+    personal_information_use_text_1: '• We use your personal information only for the purposes specified in this privacy policy.'
+    personal_information_use_text_2: '• We may use the collected information for the following purposes:'
+    personal_information_use_text_3: '• to fulfill obligations arising from any agreements between the user and us;'
+    personal_information_use_text_4: '• for email mailings to the user;'
+    personal_information_use_text_5: '• to contact the user about our other products and offers;'
+    personal_information_use_text_6: '• to contact the user about our other products and offers;'
+    personal_information_use_text_7: '• to improve the ease of use of the Resource;'
+    personal_information_use_text_8: '• for marketing purposes.'
+    personal_information_use_text_9: '• The user can unsubscribe from email newsletters by clicking on the appropriate button in our emails.'
+    personal_information_use_text_10: ' • We do NOT share users email addresses with any third party.'
+
+    keep_your_data: 'How long we keep your data'
+    keep_your_data_text_1: ' If you leave a comment, it and its metadata are stored indefinitely. This way, we can automatically identify and approve each subsequent comment instead of keeping them in a moderation queue.
+                             For users who register on our site (if any), we store the personal information they provide in their user profile. All users can view, edit or delete their personal data at any time (except that they cannot change their username). Site administrators can also view and edit this information.'
+
+    data_right: 'What rights do you have regarding your data?'
+    data_right_text_1: 'If you have an account on this site or have left comments, you can request to receive an exported file of the personal data we hold about you, including all data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are required to retain for administrative, legal and security purposes.'
+
+    send_your_data: 'Where we send your data'
+    send_your_data_text_1: 'Visitor comments may be checked using an automatic spam detection service.'
+
+    contact_information: 'Contact Information'
+    contact_information_text_1: '• The User may contact us in case of any questions about this privacy policy and his privacy regarding the use of our Resource.'
+    contact_information_text_2: '• Address: Lviv city, Ukraine'
+    contact_information_text_3: '• Email: google@gmail.com'
+
+    additional_information: 'Additional Information'
+    additional_information_text_1: '• Except for the purposes of other sections of this privacy policy, we may disclose user information:'
+    additional_information_text_2: '• to the extent we are required to do so by law;'
+    additional_information_text_3: '• in connection with any legal proceedings;'
+    additional_information_text_4: '• to exercise or protect our rights (including providing information to others to prevent fraud);'
+    additional_information_text_5: '• to the buyer or seller of any company or asset that we are selling or buying.'
+    additional_information_text_6: '• Except as provided in this privacy policy, we do not sell or share user information with third parties.'
+
+    protect_your_data: 'How we protect your data'
+    protect_your_data_text_1: '• After collection, the users personal information is transferred to our servers located in Ukraine. We provide organizational and technical measures to protect personal data. The appropriate level of data protection is established by our corporate rules.'
+    protect_your_data_text_2: '• We will take necessary and sufficient organizational and technical measures to protect user information from unauthorized or accidental access, destruction, modification, blocking, copying, distribution, as well as from other illegal actions of third parties.'
+    protect_your_data_text_3: '• We are not responsible for the illegal actions of third parties, hackers, intruders and other violators who may violate the terms of this privacy policy and attempt to obtain all or part of users personal information.'
+    protect_your_data_text_4: '• Direct access to personal information is allowed only to our authorized employees who participate in the maintenance of the Resource. Such employees observe strict confidentiality and prevent unauthorized access of third parties to personal information.'
+
+    update_personal_information: 'Correction and update of personal information'
+    update_personal_information_text_1: '• If a user wants to change personal information (such as an email address), we will try to provide a way to do so. You can usually do this on your profile page.'  
+
+    third_party_sites: 'Third party sites'
+    third_party_sites_text_1: '• Our Resource may contain links to other websites. We are not responsible for the content, terms and conditions or privacy policies of third party websites. We encourage users to be careful when they leave our Site and to read the privacy statements of websites that collect personal information.'
+    third_party_sites_text_2: '• Thirdparty websites may contain their own cookies. We are not responsible for their use of cookies.'

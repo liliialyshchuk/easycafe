@@ -2,87 +2,71 @@
     <div class="container"> 
         <div class="fl-rich-text">
             <p>&nbsp;</p>
-            <h2>Delivery order</h2>
-            <h3>General information</h3>
+            <h2><%= t('delivery.delivery_order') %></h2>
+            <h3><%= t('delivery.general_information') %></h3>
             <ul>
-                <li>
-                    You can place an order online <strong>from 11:00 a.m. to 9:00 p.m.</strong>
-                </li>
-                <li>To receive the Order, it is absolutely necessary to specify the telephone number of only Ukrainian telephone providers (we cannot call the Client who is not in Ukraine to the numbers of foreign operators).</li>
-                <li>When placing an Order, you can leave any comment.</li>
-                <li>The photo of the packaging presented on the website may differ from the actual packaging. For more accurate information, always refer to the actual packaging.</li>
-                <li>Pay attention! Our dishes are made from fresh certified products for consumption by healthy people. Unfortunately, we cannot guarantee that guests who are allergic to certain spices or plants will not have them in our dishes. Therefore, we offer guests with such a private specificity a separate note when choosing dishes. Allergens: Eggs, fish, peanuts, soy, milk, nuts, celery, mustard, sesame, honey.</li>
+                <li><%= t('delivery.general_information_text_1') %></li>
+                <li><%= t('delivery.general_information_text_2') %></li>
+                <li><%= t('delivery.general_information_text_3') %></li>
+                <li><%= t('delivery.general_information_text_4') %></li>
+                <li><%= t('delivery.general_information_text_5') %></li>
             </ul>
-            <h3>Return of goods</h3>
+            <h3><%= t('delivery.return_of_goods') %></h3>
             <ul>
-                <li>When receiving an order, you can always refuse any delivered product, in accordance with the Law of Ukraine on consumer rights.</li>
-                <li>According to the Law of Ukraine, we will not be able to return excise goods: alcoholic products.</li>
-                <li>According to the Law of Ukraine on the Protection of Consumer Rights, the return of goods is possible only on the condition that the Check and damaged Goods are preserved.</li>
+                <li><%= t('delivery.return_of_goods_text_1') %></li>
+                <li><%= t('delivery.return_of_goods_text_2') %></li>
+                <li><%= t('delivery.return_of_goods_text_3') %></li>
             </ul>
             <p>
-                <a href="http://zakon2.rada.gov.ua/laws/show/1023-12" target="_blank" rel="nofollow noopener">
-                    <strong>Law of Ukraine "On Protection of Consumer Rights"</strong>
-                </a>
+                <%= link_to t('delivery.return_of_goods_text_4'), 'http://zakon2.rada.gov.ua/laws/show/1023-12', target: '_blank' %>
             </p>
             <p>
-                <a href="http://zakon2.rada.gov.ua/laws/show/172-94-%D0%BF" target="_blank" rel="nofollow noopener">
-                    <strong>Resolution on the implementation of certain provisions of the Law of Ukraine "On the Protection of Consumer Rights"</strong>
-                </a>
+                <%= link_to t('delivery.return_of_goods_text_5'), 'http://zakon2.rada.gov.ua/laws/show/172-94-%D0%BF', target: '_blank' %>
             </p>
-            <h3>Prices for goods</h3>
+            <h3><%= t('delivery.price_of_goods') %></h3>
             <ul>
-                <li>The prices for goods in the online store are the same as in the place where your order is collected, however, the basket is collected and taken through the cash register always on the day of delivery, so the actual amount of the order may differ if the price of the goods selected by you has changed.</li>
-                <li>Upon receipt of the order, you receive a fiscal receipt from the Institution, which confirms the cost of the goods.</li>
-                <li>You will be notified of a change in the price of the goods you have selected by SMS message or phone call.</li>
-                <li>Prices and in-store availability are subject to change, so the actual order amount may vary, especially if you chose next-day delivery. If the price changes by more than UAH 5 per item, or changes in the weight of the Goods sold "by weight" by more than +/- 200</li>
+                <li><%= t('delivery.price_of_goods_text_1') %></li>
+                <li><%= t('delivery.price_of_goods_text_2') %></li>
+                <li><%= t('delivery.price_of_goods_text_3') %></li>
+                <li><%= t('delivery.price_of_goods_text_4') %></li>
             </ul>
-            <h2>Courier delivery</h2>
-            <h3>General information</h3>
+            <h2><%= t('delivery.courier_delivery') %></h2>
+            <h3><%= t('delivery.general_information') %></h3>
             <ul>
-                <li>Courier delivery involves delivery of the order to the entrance of an apartment building or to the gate of a private house.</li>
-                <li>Delivery to the door of the apartment (apartments, etc.) is carried out for an additional payment of UAH 5/floor.</li>
-                <li>Waiting time for the courier at your house - up to 10 minutes. In case of exceeding the waiting time by the courier, the cost is 1 minute - 3 hryvnias.</li>
-                <li>In case you cannot guarantee your presence during the entire time window, please contact the Administrator 0678888888.</li>
-                <li>Confirmation of receipt of your order will be sent to your registered e-mail.</li>
+                <li><%= t('delivery.courier_delivery_text_1') %></li>
+                <li><%= t('delivery.courier_delivery_text_2') %></li>
+                <li><%= t('delivery.courier_delivery_text_3') %></li>
+                <li><%= t('delivery.courier_delivery_text_4') %></li>
+                <li><%= t('delivery.courier_delivery_text_5') %></li>
             </ul>
-            <h3>Shipping cost</h3>
+            <h3><%= t('delivery.shipping_cost') %></h3>
             <ul>
-                <li>The cost of delivery depends on the delivery address.</li>
-                <li>
-                    The minimum cost of courier delivery in Lviv  <strong> is UAH 100.</strong>
-                </li>
-                <li>
-                    If the courier arrives at the client's address twice in the same time window, the client pays for each delivery ( <em>the possibility is agreed individually</em>
-                    ).
-                </li>
+                <li><%= t('delivery.shipping_cost_text_1') %></li>
+                <li><%= t('delivery.shipping_cost_text_2') %></li>
+                <li><%= t('delivery.shipping_cost_text_3') %></li>
             </ul>
-            <h3>Order cancellation</h3>
+            <h3><%= t('delivery.order_cancellation') %></h3>
             <ul>
-                <li>The courier service reserves the right to cancel the order in case of impossibility of its delivery (floods, earthquakes, cataclysms, difficult traffic situation in the city, or if the address of the delivery point is located in an area that cannot be approached by car within a radius of 50 meters). In case of cancellation of the order, the Client can independently repeat the order on the website.</li>
-                <li>We reserve the right to inform Customers about the cancellation of orders by SMS (maximum 2 hours before the end of the selected delivery window).</li>
-                <li>If we are unable to contact you, the company reserves the right to move your order to the next delivery window or cancel it.</li>
-                <li>
-                    You can cancel the order or transfer it to another delivery window after placing it by calling <strong>+38 067 888 88 88</strong>
-                </li>
+                <li><%= t('delivery.order_cancellation_text_1') %></li>
+                <li><%= t('delivery.order_cancellation_text_2') %></li>
+                <li><%= t('delivery.order_cancellation_text_3') %></li>
+                <li><%= t('delivery.order_cancellation_text_4') %></li>
             </ul>
             <p>
-                <strong>Payment</strong>
+            <h3><%= t('delivery.payment') %></h3>
             </p>
             <ul>
-                <li>Cash on delivery of the collected basket, based on the total amount of the order by check.</li>
-                <li>Please check the correctness of the rest immediately in the presence of the courier.</li>
-                <li>By bank card: when paying online on the website.</li>
-                <li>By non-cash payment: prepayment according to the invoice.</li>
-                <li>When paying for the Order online on the website, the delivery cost is UAH 29 in the central part of the city, and UAH 100 outside the central part of the city within Lviv.</li>
+                <li><%= t('delivery.payment_text_1') %></li>
+                <li><%= t('delivery.payment_text_2') %></li>
+                <li><%= t('delivery.payment_text_3') %></li>
+                <li><%= t('delivery.payment_text_4') %></li>
+                <li><%= t('delivery.payment_text_5') %></li>
             </ul>
-            <h3>Collection</h3>
+            <h3><%= t('delivery.collection') %></h3>
             <ul>
-                <li>
-                    Depending on the volume of the order and the categories of selected goods, your order will be packed in one or more packages ( (<strong>their cost is not added to your order</strong>
-                    ).
-                </li>
-                <li>During transportation, hot and warm dishes are placed in thermo-packages, which maintain the temperature required for the dishes.</li>
-                <li>The recommended time of eating dishes is 2 hours.</li>
+                <li><%= t('delivery.collection_text_1') %></li>
+                <li><%= t('delivery.collection_text_2') %></li>
+                <li><%= t('delivery.collection_text_3') %></li>
             </ul>
             <p><br></p>
         </div>

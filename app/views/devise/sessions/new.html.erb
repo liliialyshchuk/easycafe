@@ -7,20 +7,20 @@
       <div class="row center sign-up-form">
         <div class="col s12 l12">
           <div class="card-panel">
-            <h3 class="header">Login</h3>
+            <h3 class="header"><%= t('devise.login') %></h3>
               <div class="row">
                 <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "col s12"}) do |f| %>
                  
                   <div class="row">
                     <div class="input-field col s12">
-                      <%= f.email_field :email, placeholder: "Enter your Email", autofocus: true, autocomplete: "email" %>
+                      <%= f.email_field :email, placeholder: t('devise.placeholder.enter_your_email'), autofocus: true, autocomplete: "email" %>
                       <%= f.label :email %>
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="input-field col s12">
-                      <%= f.password_field :password, placeholder: "Enter your Password", autocomplete: "current-password" %>
+                      <%= f.password_field :password, placeholder: t('devise.placeholder.enter_your_password'), autocomplete: "current-password" %>
                       <%= f.label :password %>
                     </div>
                   </div>
@@ -28,7 +28,7 @@
                   <div class="row">
                     <div class="input-field col s12">
                       <div class="actions">
-                        <%= f.button "Log in", class: "waves-effect waves-light btn-small" %>
+                        <%= f.button t('devise.button.log_in'), class: "waves-effect waves-light btn-small" %>
                       </div>
                     </div>
                   </div>

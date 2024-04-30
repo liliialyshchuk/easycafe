@@ -11,109 +11,88 @@
                                         <div class="fl-module fl-module-rich-text fl-node-tdcsip5vxe20" data-node="tdcsip5vxe20">
                                             <div class="fl-module-content fl-node-content">
                                                 <div class="fl-rich-text">
-                                                    <h2>Privacy policy of the website SunnyCafe</h2>
-                                                    <h6>Last update: 26/ 04 / 2024</h6>
+                                                    <h2><%= t('policy.privacy_policy') %></h2>
+                                                    <h6><%= t('policy.last_update') %></h6>
                                                     <p>
-                                                        This document describes the privacy policy of  <strong>SunnyCafe</strong>
-                                                    , including all online services ("Resource") on the "Websites" sites. 
+                                                        <%= t('policy.privacy_policy_text_1') %> 
                                                     </p>
                                                     <p>
-                                                        "SunnyCafe" processes personal information both as a processor and as a controller, according to 
-                                                    <a href="https://gdpr-info.eu/" target="_blank" rel="nofollow noopener">
-                                                        <strong>GDPR (General Data Protection Regulation)</strong>
+                                                        <%= t('policy.privacy_policy_text_2') %>
+                                                        <%= link_to t('policy.privacy_policy_text_3'), 'https://gdpr-info.eu/', target: '_blank' %>
                                                     </a>
-                                                    .
                                                     </p>
-                                                    <h2>Who we are</h2>
-                                                    <p>Our website address: https://www.google.com.</p>
-                                                    <h2>What personal data we collect and why we collect it</h2>
-                                                    <h3>Comments</h3>
-                                                    <p>When visitors leave comments on the site, we collect the data displayed in the comment form, as well as the visitors' IP addresses and the user's browser agent string to help detect spam.</p>
+                                                    <h2><%= t('policy.personal_data_collect') %></h2>
+                                                    <h3><%= t('policy.comments') %></h3>
+                                                    <p><%= t('policy.comments_text_1') %></p>
+                                                    <p> <%= t('policy.comments_text_2') %></p>
+                                                    <h3><%= t('policy.media_files') %></h3>
                                                     <p>
-                                                        An anonymous string generated from your email address (also called a hash) can be provided to Gravatar to see if you're using it. The Gravatar privacy policy is available here: https://automattic.com/privacy/. Once your comment is approved, your profile picture will be visible to the public in the context of your comment.
+                                                        <%= t('policy.media_files_text_1') %>
                                                     </p>
-                                                    <h3>Media files</h3>
+                                                    <h3><%= t('policy.contact_forms') %></h3>
+                                                    <h4><%= t('policy.cookies') %></h4>
                                                     <p>
-                                                        If you upload images to the site, you should avoid uploading images with embedded location data ( 
-                                                        <strong>
-                                                            <a href="https://uk.m.wikipedia.org/wiki/Exif" target="_blank" rel="nofollow noopener">EXIF GPS</a>
-                                                        </strong>
-                                                        ). Site visitors can download and extract any location data from images on the site.
+                                                        <%= t('policy.cookies_text_1') %>
                                                     </p>
-                                                    <h3>Contact forms</h3>
-                                                    <h4>Cookies</h4>
+                                                    <h3><%= t('policy.embedded_content') %></h3>
                                                     <p>
-                                                        If you leave a comment on our site, you can enable the storage of your name, email address and website in cookies. This is for your convenience so you don't have to re-enter your details the next time you leave a comment. These cookies will be stored for 1 year.
-                                                        If you have an account and are logged in to this site, we will set a temporary cookie to determine if your browser accepts cookies. This cookie does not contain personal data and is deleted when you close your browser.<br/>
-                                                        <strong>Cookies</strong>
-                                                        – are small text files that are stored on the user's computer to remember them.
-                                                        We use "session cookies" and "persistent cookies". Session cookies are deleted when the user closes the browser.
-                                                        The user's web browser allows him to control and clear cookies on his computer. If the user refuses cookies, he can still use the Resource, but the ability to use some functions may be limited.
-                                                        When you log in, we will also set some cookies to save your login information and screen settings. Login cookies last for 2 days and screen settings cookies for 1 year. If you select "Remember me", your login will be stored for 2 weeks. If you log out of your account, the login cookies will be deleted.
-                                                        If you edit or publish an article, an additional cookie will be stored in your browser. This cookie contains no personal data and simply identifies the article you have just edited. It expires in 1 day.
+                                                        <%= t('policy.embedded_content_text_1') %><br/>
+                                                    <h3><%= t('policy.user_content') %></h3>
+                                                    <p>
+                                                        <%= t('policy.user_content_text_1') %><br/>
+                                                        <%= t('policy.user_content_text_2') %><br/>
+                                                        <%= t('policy.user_content_text_3') %><br/>
                                                     </p>
-                                                    <h3>Embedded content from other websites</h3>
+                                                    <h3><%= t('policy.personal_information_use') %></h3>
                                                     <p>
-                                                        Articles on this site may contain embedded content (for example: videos, images, articles, etc.). Embedded content from other sites behaves as if the user had visited another site.
-                                                        These sites may collect data about you, use cookies, embed additional third-party tracking systems, and monitor your interaction with this embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to the site.
-                                                    <h3>USER CONSENT</h3>
-                                                    <p>
-                                                        • The processing of the user's personal information is based on the user's consent to this, which the user gives us before we collect the information.<br/>
-                                                        • The user can withdraw his consent at any time. You can usually do this on your profile page.<br/>
-                                                        •  The withdrawal of consent will not affect the lawfulness of the processing before that.
+                                                        <%= t('policy.personal_information_use_text_1') %><br/>
+                                                        <%= t('policy.personal_information_use_text_2') %><br/>
+                                                        <%= t('policy.personal_information_use_text_3') %><br/>
+                                                        <%= t('policy.personal_information_use_text_4') %><br/>
+                                                        <%= t('policy.personal_information_use_text_5') %><br/>
+                                                        <%= t('policy.personal_information_use_text_6') %><br/>
+                                                        <%= t('policy.personal_information_use_text_7') %><br/>
+                                                        <%= t('policy.personal_information_use_text_8') %><br/>
+                                                        <%= t('policy.personal_information_use_text_9') %><br/>
+                                                        <%= t('policy.personal_information_use_text_10') %><br/>
+                                                       
                                                     </p>
-                                                    <h3>How do we use user personal information?</h3>
+                                                    <h3><%= t('policy.keep_your_data') %></h3>
                                                     <p>
-                                                        • We use your personal information only for the purposes specified in this privacy policy.<br/>
-                                                        • We may use the collected information for the following purposes:<br/>
-                                                        • to fulfill obligations arising from any agreements between the user and us;<br/>
-                                                        • for email mailings to the user;<br/>
-                                                        • to contact the user about our other products and offers;<br/>
-                                                        • to contact the user about our other products and offers;<br/>
-                                                        • to improve the ease of use of the Resource;<br/>
-                                                        • for marketing purposes.<br/>
-                                                        • The user can unsubscribe from email newsletters by clicking on the appropriate button in our emails.<br/>
-                                                        • We do NOT share users' email addresses with any third party.
+                                                       <%= t('policy.keep_your_data_text_1') %>
                                                     </p>
-                                                    <h3>How long we keep your data</h3>
+                                                    <h3><%= t('policy.data_right') %></h3>
+                                                    <p><%= t('policy.data_right_text_1') %></p>
+                                                    <h3><%= t('policy.send_your_data') %></h3>
+                                                    <p><%= t('policy.send_your_data_text_1') %></p>
+                                                    <h3><%= t('policy.contact_information') %></h3>
                                                     <p>
-                                                        If you leave a comment, it and its metadata are stored indefinitely. This way, we can automatically identify and approve each subsequent comment instead of keeping them in a moderation queue.
-                                                        For users who register on our site (if any), we store the personal information they provide in their user profile. All users can view, edit or delete their personal data at any time (except that they cannot change their username). Site administrators can also view and edit this information.
+                                                        <%= t('policy.contact_information_text_1') %><br/>
+                                                        <%= t('policy.contact_information_text_2') %><br/>
+                                                        <%= t('policy.contact_information_text_3') %><br/>
                                                     </p>
-                                                    <h3>What rights do you have regarding your data?</h3>
-                                                    <p>If you have an account on this site or have left comments, you can request to receive an exported file of the personal data we hold about you, including all data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are required to retain for administrative, legal and security purposes.</p>
-                                                    <h3>Where we send your data</h3>
-                                                    <p>Visitor comments may be checked using an automatic spam detection service.</p>
-                                                    <h3>Contact Information</h3>
+                                                    <h3><%= t('policy.additional_information') %></h3>
                                                     <p>
-                                                        • The User may contact us in case of any questions about this privacy policy and his privacy regarding the use of our Resource.<br/>
-                                                        • <strong>Address: Lviv city, Ukraine</strong>
-                                                        <br/>
-                                                        • <strong>Email: </strong>
-                                                        google@gmail.com
+                                                        <%= t('policy.additional_information_text_1') %><br/>
+                                                        <%= t('policy.additional_information_text_2') %><br/>
+                                                        <%= t('policy.additional_information_text_3') %><br/>
+                                                        <%= t('policy.additional_information_text_4') %><br/>
+                                                        <%= t('policy.additional_information_text_5') %><br/>
+                                                        <%= t('policy.additional_information_text_6') %><br/>
                                                     </p>
-                                                    <h3>Additional Information</h3>
+                                                    <h3><%= t('policy.protect_your_data') %></h3>
                                                     <p>
-                                                        • Except for the purposes of other sections of this privacy policy, we may disclose user information:<br/>
-                                                        • to the extent we are required to do so by law;<br/>
-                                                        • in connection with any legal proceedings;<br/>
-                                                        •  to exercise or protect our rights (including providing information to others to prevent fraud);<br/>
-                                                        • to the buyer or seller of any company or asset that we are selling or buying.<br/>
-                                                        • Except as provided in this privacy policy, we do not sell or share user information with third parties.
+                                                        <%= t('policy.protect_your_data_text_1') %><br/>
+                                                        <%= t('policy.protect_your_data_text_2') %><br/>
+                                                        <%= t('policy.protect_your_data_text_3') %><br/>
+                                                        <%= t('policy.protect_your_data_text_4') %><br/>
                                                     </p>
-                                                    <h3>How we protect your data</h3>
+                                                    <h3><%= t('policy.update_personal_information') %></h3>
+                                                    <p><%= t('policy.update_personal_information_text_1') %></p>
+                                                    <h3><%= t('policy.third_party_sites') %></h3>
                                                     <p>
-                                                        • After collection, the user's personal information is transferred to our servers located in Ukraine. We provide organizational and technical measures to protect personal data. The appropriate level of data protection is established by our corporate rules.<br/>
-                                                        • We will take necessary and sufficient organizational and technical measures to protect user information from unauthorized or accidental access, destruction, modification, blocking, copying, distribution, as well as from other illegal actions of third parties.<br/>
-                                                        • We are not responsible for the illegal actions of third parties, hackers, intruders and other violators who may violate the terms of this privacy policy and attempt to obtain all or part of users' personal information.<br/>
-                                                        • Direct access to personal information is allowed only to our authorized employees who participate in the maintenance of the Resource. Such employees observe strict confidentiality and prevent unauthorized access of third parties to personal information.
-                                                    </p>
-                                                    <h3>CORRECTION AND UPDATE OF PERSONAL INFORMATION</h3>
-                                                    <p>• If a user wants to change personal information (such as an email address), we will try to provide a way to do so. You can usually do this on your profile page.</p>
-                                                    <h3>THIRD PARTY SITES</h3>
-                                                    <p>
-                                                        • Our Resource may contain links to other websites. We are not responsible for the content, terms and conditions or privacy policies of third party websites. We encourage users to be careful when they leave our Site and to read the privacy statements of websites that collect personal information.<br/>
-                                                        • Third-party websites may contain their own cookies. We are not responsible for their use of cookies.<br>
+                                                        <%= t('policy.third_party_sites_text_1') %><br/>
+                                                        <%= t('policy.third_party_sites_text_2') %><br>
                                                         <br>
                                                         <br>
                                                     </p>

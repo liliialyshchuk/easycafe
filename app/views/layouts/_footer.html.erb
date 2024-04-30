@@ -2,23 +2,23 @@
     <div class="container">
     <div class="row">
         <div class="col l6 s12">
-        <h5 class="white-text">Sunny Cafe</h5>
-        <p class="grey-text text-lighten-4"> We accept orders <br> From 11:00 - 21:00 <br> Delivery and Pickup </p>
+        <h5 class="white-text"><%= t('site_name') %></h5>
+        <p class="grey-text text-lighten-4"> <%= t('footer.info.order_delivery.one_part') %> <br> <%= t('footer.info.order_delivery.two_part') %> <br> <%= t('footer.info.order_delivery.three_part') %> </p>
         </div>
         <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Useful info</h5>
+        <h5 class="white-text"><%= t('footer.info.useful_info') %></h5>
         <ul>
-            <li><%= link_to "Order Delivery", delivery_path, class: "grey-text text-lighten-3" %></li>
-            <li><%= link_to "Privacy Policy", policy_path, class: "grey-text text-lighten-3" %></li>
-            <li><%= link_to "Public Offer", offer_path, class: "grey-text text-lighten-3" %></li>
+            <li><%= link_to t('footer.button.order_delivery'), delivery_path, class: "grey-text text-lighten-3" %></li>
+            <li><%= link_to t('footer.button.privacy_policy'), policy_path, class: "grey-text text-lighten-3" %></li>
+            <li><%= link_to t('footer.button.public_offer'), offer_path, class: "grey-text text-lighten-3" %></li>
         </ul>
         </div>
     </div>
     </div>
     <div class="footer-copyright">
     <div class="container">
-    © 2024 Sunny Cafe
-    <a class="grey-text text-lighten-4 right" href="#">Tel: +380-67-123-45-67</a>
+    © <%= Date.today.year %> <%= t('site_name') %>
+    <a class="grey-text text-lighten-4 right" href="#"><%= t('footer.info.contact_tel') %></a>
     </div>
     </div>
 </footer>

@@ -5,28 +5,28 @@
       <div class="row center sign-up-form">
         <div class="col s12 l12">
           <div class="card-panel">
-            <h3 class="header">Sign up</h3>
+            <h3 class="header"><%= t('devise.sign_up') %></h3>
               <div class="row">
 
                 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "col s12"}) do |f| %>
 
                   <div class="row">
                     <div class="input-field col s12">
-                      <%= f.email_field :email, placeholder: "Enter your Email", autofocus: true, autocomplete: "email" %>
+                      <%= f.email_field :email, placeholder: t('devise.placeholder.enter_your_email'), autofocus: true, autocomplete: "email" %>
                       <%= f.label :email %>
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="input-field col s12">
-                      <%= f.password_field :password, placeholder: "Enter your Password (6 characters minimum)", autocomplete: "new-password" %>
+                      <%= f.password_field :password, placeholder: t('devise.placeholder.enter_your_password_6'), autocomplete: "new-password" %>
                       <%= f.label :password %>
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="input-field col s12">
-                      <%= f.password_field :password_confirmation, placeholder: "Repeat your Password", autocomplete: "new-password" %>
+                      <%= f.password_field :password_confirmation, placeholder: t('devise.placeholder.repeat_your_password'), autocomplete: "new-password" %>
                       <%= f.label :password_confirmation %>
                     </div>
                   </div>
@@ -34,7 +34,7 @@
                   <div class="row">
                     <div class="input-field col s12">
                       <div class="actions">
-                        <%= f.button "Sign up", class: "waves-effect waves-light btn-small" %>
+                        <%= f.button t('devise.button.sign_up'), class: "waves-effect waves-light btn-small" %>
                       </div>
                     </div>
                   </div>

@@ -1,54 +1,54 @@
 <header>
     <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">Pasta</a></li>
-    <li><a href="#!">Pizza</a></li>
-    <li><a href="#!">Main Dish</a></li>
-    <li><a href="#!">Grill</a></li>
-    <li><a href="#!">Fish & Seafood</a></li>
-    <li><a href="#!">Dessert</a></li>
-    <li><a href="#!">Drinks</a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.items.pasta') %></a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.items.pizza') %></a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.main_dish') %></a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.grill') %></a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.fish') %></a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.dessert') %></a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.drinks') %></a></li>
     <li class="divider"></li>
-    <li><%= link_to "All Menu", menu_path %></li>
+    <li><%= link_to t('header.dropdown_menu.all_menu'), menu_path %></li>
     </ul>
     <ul id="dropdown2" class="dropdown-content">
-    <li><a href="#!">Pasta</a></li>
-    <li><a href="#!">Pizza</a></li>
-    <li><a href="#!">Main Dish</a></li>
-    <li><a href="#!">Grill</a></li>
-    <li><a href="#!">Fish & Seafood</a></li>
-    <li><a href="#!">Dessert</a></li>
-    <li><a href="#!">Drinks</a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.pasta') %></a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.pizza') %></a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.main_dish') %></a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.grill') %></a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.fish') %></a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.dessert') %></a></li>
+    <li><a href="#!"><%= t('header.dropdown_menu.drinks') %></a></li>
     <li class="divider"></li>
-    <li><%= link_to "All Menu", menu_path %></li>
+    <li><%= link_to t('header.dropdown_menu.all_menu'), menu_path %></li>
     </ul>
     <nav>
     <div class="container">
         <div class="nav-wrapper">
-            <%= link_to "SunnyCafe",root_path, class: "brand-logo" %>
+            <%= link_to t('site_name'),root_path, class: "brand-logo" %>
 
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><%= link_to "Home", root_path %></li>
-                <li><%= link_to "About", about_path %></li>
-                <li><%= link_to "Gallery", gallery_path %></li>
-                <li><%= link_to "Contact", contact_path  %></li>
-                <li><%= link_to "Cart", cart_path  %></li>
+                <li><%= link_to t('header.menu.home'), root_path %></li>
+                <li><%= link_to t('header.menu.about'), about_path %></li>
+                <li><%= link_to t('header.menu.gallery'), gallery_path %></li>
+                <li><%= link_to t('header.menu.contact'), contact_path  %></li>
+                <li><%= link_to t('header.menu.cart'), cart_path  %></li>
                 <%- if user_signed_in? %>
-                    <li><%= link_to "My profile", edit_user_registration_path %></li>
+                    <li><%= link_to t('header.menu.profile'), edit_user_registration_path %></li>
                 <% end %>
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><%= t('header.menu.menu') %><i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
 
             <ul class="sidenav" id="mobile-demo">
-                <li><%= link_to "Home", root_path %></li>
-                <li><%= link_to "About", about_path %></li>
-                <li><%= link_to "Gallery", gallery_path %></li>
-                <li><%= link_to "Contact", contact_path  %></li>
-                <li><%= link_to "Cart", cart_path  %></li>
+                <li><%= link_to t('header.menu.home'), root_path %></li>
+                <li><%= link_to t('header.menu.about'), about_path %></li>
+                <li><%= link_to t('header.menu.gallery'), gallery_path %></li>
+                <li><%= link_to t('header.menu.contact'), contact_path  %></li>
+                <li><%= link_to t('header.menu.cart'), cart_path  %></li>
                 <%- if user_signed_in? %>
-                    <li><%= link_to "My profile", edit_user_registration_path %></li>
+                    <li><%= link_to t('header.menu.my_profile'), edit_user_registration_path %></li>
                 <% end %>
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2"><%= t('header.menu.menu') %><i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
         </div>
 
@@ -57,16 +57,16 @@
     <%- if user_signed_in? %>
         <div class="authorize-button">
             <div class="waves-effect waves-light btn-small">
-                <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete } %>
+                <%= link_to t('header.button.logout'), destroy_user_session_path, data: { turbo_method: :delete } %>
             </div>
         </div>
     <% else %>
         <div class="authorize-button">
             <div class="waves-effect waves-light btn-small">
-                <%= link_to "Sign up", new_user_registration_path %>
+                <%= link_to t('header.button.sign_up'), new_user_registration_path %>
             </div>
             <div class="waves-effect waves-light btn-small">
-                <%= link_to "Login", new_user_session_path %>
+                <%= link_to t('header.button.login'), new_user_session_path %>
             </div>
         </div>
     <% end %>
