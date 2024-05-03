@@ -6,7 +6,7 @@ import "controllers"
 //= require jquery
 //= require materialize
 //= require turbolinks
-//= require_tree .
+//= require_tree
 
 // DROPDOWN CODE:
 $(document).ready(function() {
