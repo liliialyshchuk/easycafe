@@ -64,6 +64,11 @@ en:
     menu_page: 'Меню'
     description: 'Опис'
     price: 'Ціна'
+    details: 'Деталі'
+    button:
+      back_to_menu: 'Назад до меню'
+      back_to_dish: 'Назад до вибору страви'
+
 
 
 # PUBLIC OFFER PAGE

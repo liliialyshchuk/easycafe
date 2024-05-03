@@ -64,6 +64,10 @@ en:
     menu_page: 'Menu'
     description: 'Description'
     price: 'Price'
+    details: 'Details'
+    button:
+      back_to_menu: 'Back to Menu'
+      back_to_dish: 'Back to Dish'
 
 
 # PUBLIC OFFER PAGE

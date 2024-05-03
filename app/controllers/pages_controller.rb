@@ -11,9 +11,6 @@ class PagesController < ApplicationController
     def cart 
     end
 
-    def menu 
-    end
-
     def delivery 
     end
 

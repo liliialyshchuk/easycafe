@@ -1,0 +1,9 @@
+<h1>Editing dish</h1>
+
+<%= render "form", dish: @dish %>
+
+<div>
+    <%= link_to t('menu.button.back_to_menu'), dishes_path %>
+    <%= link_to t('menu.button.back_to_dish'), @dish %>
+</div>
+
