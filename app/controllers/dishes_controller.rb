@@ -33,12 +33,14 @@ class DishesController < ApplicationController
     def update
         @dish = Dish.find(params[:id])
 
-        if @dish.update(dish_params)
-            format.html { redirect_to dish_url(@dish), notice: "Dish was successfully updated." }
-            format.json { render :show, status: :ok, location: @dish }
-        else
-            format.html { render :edit, status: :unprocessable_entity }
-            format.json { render json: @dish.errors, status: :unprocessable_entity }
+        respond_to do |format|
+            if @dish.update(dish_params)
+                format.html { redirect_to dish_url(@dish), notice: "Dish was successfully updated." }
+                format.json { render :show, status: :ok, location: @dish }
+            else
+                format.html { render :edit, status: :unprocessable_entity }
+                format.json { render json: @dish.errors, status: :unprocessable_entity }
+            end
         end
     end
 

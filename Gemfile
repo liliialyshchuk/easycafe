@@ -33,6 +33,8 @@ gem 'devise-i18n'
 
 gem 'activeadmin'
 
+gem 'cancancan'
+
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
 gem "bootsnap", require: false
