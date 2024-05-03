@@ -6,7 +6,11 @@
                 <div class="col s4">
                     <div class="card small sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator"  <%= image_tag "pizza.jpg"%> >
+                            <%- if @dish.dish_image.present? %>
+                                <img class="activator"  <%= image_tag @dish.dish_image %> >
+                            <% else %>
+                                <img class="activator"  <%= image_tag('fishbone-svgrepo-com.svg')%> >
+                            <% end %>
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4"><%= @dish.short_name %><i class="material-icons right">more_vert</i></span>

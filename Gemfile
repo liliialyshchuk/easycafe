@@ -35,6 +35,9 @@ gem 'activeadmin'
 
 gem 'cancancan'
 
+gem "image_processing"
+gem 'aws-sdk-s3', require: false
+
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
 gem "bootsnap", require: false
