@@ -1,4 +1,9 @@
 class DishesController < ApplicationController
+    before_action :require_admin, except: [:index, :show]
+
+    def index_category
+        @dishes_category = Dish.where(category_id: params[:id])
+    end
 
     def index
         @dishes = Dish.all
@@ -55,10 +60,19 @@ class DishesController < ApplicationController
     end
 
 
+private 
 
     def dish_params
-      params.require(:dish).permit(:short_name, :description, :price, :dish_image)
+      params.require(:dish).permit(:short_name, :description, :price, :dish_image, :category_id)
     end
+
+    def require_admin
+        if !(logged_in? && current_user.admin?)
+          flash[:alert] = "Only admins can perform that action"
+          redirect_to categories_path
+        end
+    end
+
 end
 
 

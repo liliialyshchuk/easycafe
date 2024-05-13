@@ -1,0 +1,12 @@
+<div class="welcome-page1">
+  <h1>Editing category</h1>
+
+  <%= render "form", category: @category %>
+
+  <br>
+
+  <div class="center">
+    <%= link_to "Show this category", @category %> |
+    <%= link_to "Back to categories", categories_path, class: "waves-effect waves-light btn-small"  %>
+  </div>
+</div>

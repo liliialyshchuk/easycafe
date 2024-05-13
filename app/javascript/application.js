@@ -10,14 +10,14 @@ import "controllers"
 
 // DROPDOWN CODE:
 $(document).ready(function() {
-    $(".dropdown-trigger").dropdown();
-    $('.sidenav').sidenav();
-    $('.materialboxed').materialbox();
-    $('.slider').slider();
+  $(".dropdown-trigger").dropdown();
+  $('.sidenav').sidenav();
+  $('.materialboxed').materialbox();
+  $('.slider').slider();
+  $('select').formSelect();
   });
 
-// $(document).on('turbolinks:load', function() {
-//     $('#fade-out-target').fadeOut(4000);
-//     console.log('gggg');
-// });
+$(document).on('turbolinks:load', function() {
+  $('.dropdown-trigger').dropdown();
+});
 

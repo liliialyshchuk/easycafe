@@ -1,14 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
 <div class="container">
     <div class="menu">
-        <h2 class="menu-header"> <%= t('menu.menu_page') %> </h2>
+        <h2 class="menu-header"> <%= @category.name  %> Menu </h2>
 
         <div class="row">
-            <% @dishes.each do |dish| %>
+            <% Dish.where(category_id: params[:id]).each do |dish| %>
                 <div class="col s4">
                     <div class="card small sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
                             <%- if dish.dish_image.present? %>
-                                <img class="activator"  <%= image_tag dish.dish_image %> 
+                                <img class="activator"  <%= image_tag dish.dish_image %> >
                             <% else %>
                                 <img class="activator"  <%= image_tag('fishbone-svgrepo-com.svg')%> >
                             <% end %>                        
@@ -26,5 +28,18 @@
                 </div>
             <% end %>
         </div>
-    </div>
+        <div class="container">
+          <div class="row">
+            <div class="center">
+              <div class="input-field">
+                <div class="actions">
+                  <%= link_to "Back to Menu", dishes_path, class: "waves-effect waves-light btn-small" %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
+
+

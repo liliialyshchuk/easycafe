@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="welcome-page1">
+  <div class="center">
+    <h1>Categories</h1>
+
+    <div id="categories">
+      <% @categories.each do |category| %>
+        <h5> <%= render category %> </h5>
+        <p>
+          <%= link_to "Show this category", category, class: "waves-effect waves-light btn-small"   %>
+        </p>
+            <a> ___________________________________________________________________ </a>
+      <% end %>
+    </div>
+
+    <br>
+    <div class="container">
+      <%= link_to "New category", new_category_path, class: "waves-effect waves-light btn-large"   %>
+    </div>
+    <br>
+  </div>
+</div>

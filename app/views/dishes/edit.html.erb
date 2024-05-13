@@ -1,9 +1,11 @@
-<h1>Editing dish</h1>
+<div class="welcome-page1">
+    <h1>Editing dish</h1>
 
-<%= render "form", dish: @dish %>
+    <%= render "form", dish: @dish %>
 
-<div>
-    <%= link_to t('menu.button.back_to_menu'), dishes_path %>
-    <%= link_to t('menu.button.back_to_dish'), @dish %>
+    <div class="center">
+        <%= link_to t('menu.button.back_to_menu'), dishes_path, class: "waves-effect waves-light btn-small" %>
+        <%= link_to t('menu.button.back_to_dish'), @dish, class: "waves-effect waves-light btn-small" %>
+    </div>
 </div>
 
