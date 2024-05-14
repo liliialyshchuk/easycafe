@@ -38,6 +38,8 @@ gem 'cancancan'
 gem "image_processing"
 gem 'aws-sdk-s3', require: false
 
+gem 'will_paginate', '~> 4.0'
+
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
 gem "bootsnap", require: false

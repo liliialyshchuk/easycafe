@@ -31,7 +31,7 @@ en:
   footer:
     button:
       order_delivery: 'Order Delivery'
-      privace_policy: 'Privacy Policy'
+      privacy_policy: 'Privacy Policy'
       public_offer: 'Public Offer'
     info:
       contact_tel: 'Telephone: +380-99-999-99-99'
@@ -57,6 +57,26 @@ en:
       slider_4:
         header: 'AWARD'
         description: '2023 Winner'
+
+  contact:
+    contact_text: 'Для Замовлення страв на самовивіз та доставку телефонуйте'
+    contact_tel: 'Телефон: +380-99-999-99-99'
+    find_us_title_1: 'Як нас знайти:'
+    find_us_text_1: 'Ресторан SunnyCafe, м. Львів'
+    find_us_details_1:
+      one: '• м. Львів, вул. Сонячна, 10. Вхід зі сторони вулиці Грушевського'
+      two: '• Чекаємо на Вас з 11:00 до 22:00'
+      three: '• Адміністратор Ресторану SunnyCafe: +380-99-999-99-99'
+      four: '• Замовлення страв на доставку та самовивіз з 11:00 до 20:45:  +380-99-999-99-99'
+      five: '• Зауваження, скарги та пропозиції щодо доставки: +380-99-999-99-99'
+    find_us_text_2: 'Ресторан SunnyCafe, м. Київ'
+    find_us_details_2:
+      one: '• м. Київ, вул. Тобілевича, 4'
+      two: '• Чекаємо на Вас з 11:00 до 22:00'
+      three: '• Адміністратор Ресторану SunnyCafe: +380-99-999-99-99'
+      four: '• Доставки у нас немає'
+
+
 
 
 

@@ -1,5 +1,5 @@
 class DishesController < ApplicationController
-    before_action :require_admin, except: [:index, :show]
+    # before_action :require_admin, except: [:index, :show]
 
     def index_category
         @dishes_category = Dish.where(category_id: params[:id])

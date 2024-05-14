@@ -58,7 +58,23 @@ en:
         header: 'НАГОРОДА'
         description: '2023 Переможець'
 
-
+  contact:
+    contact_text: 'Call to order meals for pick-up and delivery'
+    contact_tel: 'Telepgone: +380-99-999-99-99'
+    find_us_title_1: 'How to find us:'
+    find_us_text_1: 'Comfort food restaurant SunnyCafe, Lviv city'
+    find_us_details_1:
+      one: '• Lviv city, Sunny str., 10. Entrance from Hrushevsky Street'
+      two: '• We are waiting for you from 11:00 to 22:00'
+      three: '• Administrator of the SunnyCafe: +380-99-999-99-99'
+      four: '• Ordering meals for delivery and take-out from 11:00 a.m. to 8:45 p.m:  +380-99-999-99-99'
+      five: '• Remarks, complaints and suggestions regarding delivery +380-99-999-99-99'
+    find_us_text_2: 'Comfort food restaurant SunnyCafe, Kyiv city'
+    find_us_details_2:
+      one: '• Kyiv city, Tobilevycha str. 4'
+      two: '• We are waiting for you from 10:45 to 22:00'
+      three: '• Administrator of restaurant  SunnyCafe: +380-99-999-99-99'
+      four: '• We do not have delivery'
 
   menu:
     menu_page: 'Меню'
