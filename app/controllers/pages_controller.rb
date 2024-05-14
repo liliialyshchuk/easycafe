@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-    def about 
+    def vacancy 
     end
 
     def gallery 

@@ -6,7 +6,7 @@ en:
   header:
     menu:
       home: 'Дім'
-      about: 'Про нас'
+      vacancy: 'Вакансії'
       gallery: 'Галерея'
       contact: 'Контакти'
       cart: 'Корзина'
@@ -59,22 +59,37 @@ en:
         description: '2023 Переможець'
 
   contact:
-    contact_text: 'Call to order meals for pick-up and delivery'
-    contact_tel: 'Telepgone: +380-99-999-99-99'
-    find_us_title_1: 'How to find us:'
-    find_us_text_1: 'Comfort food restaurant SunnyCafe, Lviv city'
+    contact_text: 'Для Замовлення страв на самовивіз та доставку телефонуйте'
+    contact_tel: 'Телефон: +380-99-999-99-99'
+    find_us_title_1: 'Як нас знайти:'
+    find_us_text_1: 'Ресторан SunnyCafe, м. Львів'
     find_us_details_1:
-      one: '• Lviv city, Sunny str., 10. Entrance from Hrushevsky Street'
-      two: '• We are waiting for you from 11:00 to 22:00'
-      three: '• Administrator of the SunnyCafe: +380-99-999-99-99'
-      four: '• Ordering meals for delivery and take-out from 11:00 a.m. to 8:45 p.m:  +380-99-999-99-99'
-      five: '• Remarks, complaints and suggestions regarding delivery +380-99-999-99-99'
-    find_us_text_2: 'Comfort food restaurant SunnyCafe, Kyiv city'
+      one: '• м. Львів, вул. Сонячна, 10. Вхід зі сторони вулиці Грушевського'
+      two: '• Чекаємо на Вас з 11:00 до 22:00'
+      three: '• Адміністратор Ресторану SunnyCafe: +380-99-999-99-99'
+      four: '• Замовлення страв на доставку та самовивіз з 11:00 до 20:45:  +380-99-999-99-99'
+      five: '• Зауваження, скарги та пропозиції щодо доставки: +380-99-999-99-99'
+    find_us_text_2: 'Ресторан SunnyCafe, м. Київ'
     find_us_details_2:
-      one: '• Kyiv city, Tobilevycha str. 4'
-      two: '• We are waiting for you from 10:45 to 22:00'
-      three: '• Administrator of restaurant  SunnyCafe: +380-99-999-99-99'
-      four: '• We do not have delivery'
+      one: '• м. Київ, вул. Тобілевича, 4'
+      two: '• Чекаємо на Вас з 11:00 до 22:00'
+      three: '• Адміністратор Ресторану SunnyCafe: +380-99-999-99-99'
+      four: '• Доставки у нас немає'
+
+  vacancy:
+    vacancy_name: 'Вакансії'
+    name: 'Кухар'
+    description: 'Опис вакансії:'
+    requirements: 'Вимоги: Потрібен Кухар.'
+    conditions: 'Умови роботи:'
+    condition:
+      condition_1: '• Оплата від 1200 грн за зміну.'
+      condition_2: '• Графік роботи позмінний.'
+      condition_3: '• Своєчасна оплата.'
+    details: 'За всіма подробицями звертайтесь за номером:'
+    contact: '380-99-999-99-99'
+
+
 
   menu:
     menu_page: 'Меню'

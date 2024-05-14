@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :dishes
   devise_for :users
   root 'welcome#index'
-  get 'about',       to: 'pages#about'
+  get 'vacancy',     to: 'pages#vacancy'
   get 'gallery',     to: 'pages#gallery'
   get 'contact',     to: 'pages#contact'
   get 'cart',        to: 'pages#cart'
