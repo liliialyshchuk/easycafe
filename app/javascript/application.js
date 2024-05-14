@@ -15,6 +15,7 @@ $(document).ready(function() {
   $('.materialboxed').materialbox();
   $('.slider').slider();
   $('select').formSelect();
+  $('.materialboxed').materialbox();
   });
 
 $(document).on('turbolinks:load', function() {
