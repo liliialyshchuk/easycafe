@@ -31,7 +31,7 @@ en:
   footer:
     button:
       order_delivery: 'Доставка Замовлення'
-      privace_policy: 'Політика конфіденційності'
+      privacy_policy: 'Політика конфіденційності'
       public_offer: 'Публічна оферта'
     info:
       contact_tel: 'Телефон: +380-99-999-99-99'
