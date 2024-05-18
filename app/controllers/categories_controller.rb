@@ -1,6 +1,7 @@
 class CategoriesController < InheritedResources::Base
   # before_action :require_admin, except: [:index, :show]
 
+
   def index
     @categories = Category.all
   end

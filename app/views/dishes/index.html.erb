@@ -25,7 +25,10 @@
                     </div>
                 </div>
             <% end %>
+            <div class="center">
+                <%= will_paginate @dishes, renderer: MaterializePagination::Rails  %>
+            </div>
         </div>
-
     </div>
 </div>
+

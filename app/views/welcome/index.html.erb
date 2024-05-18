@@ -43,7 +43,7 @@
 
     <div class="collection">
        <% Category.all.each do |category| %>
-            <a><%= link_to category.name, category, class: 'collection-item' %></a>
+            <a><%= link_to category.name, dishes_path(@dishes, {category_id: category.id}), class: 'collection-item' %></a>
        <% end %>
        <li class="divider"></li>
        <%= link_to t('header.dropdown_menu.all_menu'), dishes_path, class: 'collection-item'  %>

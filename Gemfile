@@ -8,6 +8,8 @@ gem "sprockets-rails"
 
 gem "pg"
 
+gem 'pry'
+
 gem "puma", ">= 5.0"
 
 gem "importmap-rails"
@@ -38,7 +40,8 @@ gem 'cancancan'
 gem "image_processing"
 gem 'aws-sdk-s3', require: false
 
-gem 'will_paginate', '~> 4.0'
+gem 'will_paginate', '~> 3.1'
+gem 'will_paginate-materialize', git: 'https://github.com/mldoscar/will_paginate-materialize', branch: 'master'
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 

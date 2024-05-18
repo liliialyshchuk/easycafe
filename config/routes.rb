@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'delivery',    to: 'pages#delivery'
   get 'policy',      to: 'pages#policy'
   get 'offer',       to: 'pages#offer'
+  
 end
 
 # get 'welcome/new', to: 'welcome#new'

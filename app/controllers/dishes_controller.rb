@@ -1,12 +1,14 @@
 class DishesController < ApplicationController
     # before_action :require_admin, except: [:index, :show]
 
-    def index_category
-        @dishes_category = Dish.where(category_id: params[:id])
-    end
-
     def index
-        @dishes = Dish.all
+        if params[:category_id]
+            dishes = Dish.where(category_id: params[:category_id])
+        else
+            dishes = Dish.all
+        end
+
+        @dishes = dishes.paginate(page: params[:page], per_page:9)
     end
     
     def show
