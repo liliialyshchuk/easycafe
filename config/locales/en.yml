@@ -99,7 +99,7 @@ en:
     button:
       back_to_menu: 'Back to Menu'
       back_to_dish: 'Back to Dish'
-
+    bucket: 'Add to Bucket'
 
 # PUBLIC OFFER PAGE
   offer:

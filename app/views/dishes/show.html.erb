@@ -1,39 +1,43 @@
 <div class="container">
     <div class="menu">
         <h2 class="menu-header"> <%= @dish.short_name %> </h2>
-        
+
         <div class="row">
-            <div class="col s4">
-                <div class="card small sticky-action">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <%- if @dish.dish_image.present? %>
-                            <img class="activator"  <%= image_tag @dish.dish_image %> >
-                        <% else %>
-                            <img class="activator"  <%= image_tag('fishbone-svgrepo-com.svg')%> >
-                        <% end %>
+            <div class="col s8 offset-s2">
+                <div class="card z-depth-4"">
+                    <div class="card-image">
+                        <%= image_tag @dish.dish_image %> 
+                        <span class="card-title"><%= @dish.short_name %></span>
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4"><%= @dish.short_name %><i class="material-icons right">more_vert</i></span>
-                        <p><a> <%= t('menu.price') %>: <%= @dish.price %> USD</a><a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons right">add</i></a></p>
+                        <div class="row">
+                            <div class="col s9">
+                                <p><%= t('menu.description') %>: <%= @dish.description %></p>
+                            </div>
+                            <div class="col s3">
+                                <p><%= t('menu.price') %>: <%= @dish.price %> USD</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><%= t('menu.description') %>:<i class="material-icons right">close</i></span>
-                        <p><%= @dish.description %></p>
-                        <%= link_to t('menu.details'), @dish %>
+                    <div class="card-action rigth">
+                        <a href="#"><%= t('menu.bucket') %> <i class="small material-icons right">add</i></a>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="container">
             <div class="row">
                 <div class="center">
                     <div class="input-field">
                         <div class="actions">
-                            <%= link_to "Back to Menu", dishes_path, class: "waves-effect waves-light btn-small" %>
+                            <%= link_to t('menu.button.back_to_menu') , dishes_path, class: "waves-effect waves-light btn-small" %>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+  
     </div>
 </div>
+
