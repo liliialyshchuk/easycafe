@@ -20,6 +20,8 @@
             <%= link_to t('site_name'),root_path, class: "brand-logo left" %>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
+                <li><%= link_to 'EN', url_for(locale: :en), class: 'btn-floating btn-small waves-effect waves-light' %></li>
+                <li><%= link_to 'UA', url_for(locale: :uk), class: 'btn-floating btn-small waves-effect waves-light'  %></li>        
                 <li><%= link_to t('header.menu.home'), root_path %></li>
                 <li><%= link_to t('header.menu.vacancy'), vacancy_path %></li>
                 <li><%= link_to t('header.menu.gallery'), gallery_path %></li>
@@ -42,7 +44,9 @@
                 <% else %>
                     <li><%= link_to t('header.button.sign_up'), new_user_registration_path, class: 'waves-effect waves-light btn-small' %></li>
                     <li><%= link_to t('header.button.login'), new_user_session_path, class: 'waves-effect waves-light btn-small' %></li>
-                <% end %>                
+                <% end %>     
+                <li><%= link_to 'EN', root_path(locale: :en), class: 'btn-floating btn-small waves-effect waves-light'  %></li>
+                <li><%= link_to 'UA', root_path(locale: :uk), class: 'btn-floating btn-small waves-effect waves-light'  %></li>            
                 <li><%= link_to t('header.menu.home'), root_path %></li>
                 <li><%= link_to t('header.menu.vacancy'), vacancy_path %></li>
                 <li><%= link_to t('header.menu.gallery'), gallery_path %></li>
