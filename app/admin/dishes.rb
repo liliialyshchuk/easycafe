@@ -28,3 +28,8 @@ ActiveAdmin.register Dish do
     f.actions
   end
 end
+
+# class Dish < ActiveRecord::Base
+
+#   has_many :feedbacks
+# end

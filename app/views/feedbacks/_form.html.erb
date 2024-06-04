@@ -1,0 +1,41 @@
+<%= form_with(model: feedback) do |form| %>
+  <% if feedback.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(feedback.errors.count, "error") %> prohibited this feedback from being saved:</h2>
+
+      <ul>
+        <% feedback.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+    <div class="field form-group">
+      <%= form.label :comment, "Feedback:", style: "display: block" %>
+      <%= form.text_field :comment, class: "form-control", placeholder: t('feedback.comment_field'), autofocus: true %>
+    </div>
+
+    <br>
+
+    <div class="field form-group">
+      <%= form.label :rating, "Rating:", style: "display: block" %>
+      <%= form.number_field :rating, class: "form-control", placeholder: t('feedback.rating_field'), autofocus: true %>
+    </div>
+
+    <%= form.hidden_field :dish_id, value: params[:dish_id] %>
+
+    <br>
+    <br> 
+
+    <div class="center">
+      <div class="waves-effect waves-light btn-small">
+        <%= form.submit %>
+      </div>
+    </div>
+    <br>
+
+   
+
+<% end %>

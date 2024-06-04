@@ -87,7 +87,12 @@ uk:
     details: 'За всіма подробицями звертайтесь за номером:'
     contact: '380-99-999-99-99'
 
-
+  feedback:
+    feedback_new: 'Новий відгук:'
+    comment_field: 'Будь ласка, напишіть свій відгук'
+    rating_field: 'Оцініть від 1 до 10'
+    add_feedback: 'Додати відгук та рейтинг'
+  
 
   menu:
     menu_page: 'Меню'
@@ -98,6 +103,8 @@ uk:
       back_to_menu: 'Назад до меню'
       back_to_dish: 'Назад до вибору страви'
     bucket: 'Додати до корзини'
+    rating: 'Рейтинг'
+    feedback: 'Відгуки для'
 
 
 

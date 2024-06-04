@@ -9,10 +9,15 @@ class DishesController < ApplicationController
         end
 
         @dishes = dishes.paginate(page: params[:page], per_page:9)
+ 
     end
     
     def show
-        @dish = Dish.find(params[:id])
+        @dish = Dish.includes(:feedbacks).find(params[:id])
+        @feedbacks = @dish.feedbacks.paginate(page: params[:page], per_page:5)
+
+        rating_arr = @dish.feedbacks.pluck(:rating)
+        @average_rating = rating_arr.blank? ? nil : (rating_arr.inject(0.0) { |sum, el| sum + el }.to_f / rating_arr.size).round(2)
     end
 
     def new

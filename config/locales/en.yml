@@ -87,7 +87,11 @@ en:
     details: 'For all details, contact the number:'
     contact: '380-99-999-99-99'
 
-
+  feedback:
+    feedback_new: 'New feedback:'
+    comment_field: 'Please write your feedback'
+    rating_field: 'Please enter from 1 to 10'
+    add_feedback: 'Add feedback and rating'
 
   menu:
     menu_page: 'Menu'
@@ -98,6 +102,8 @@ en:
       back_to_menu: 'Back to Menu'
       back_to_dish: 'Back to Dish'
     bucket: 'Add to Bucket'
+    rating: 'Rating'
+    feedback: 'Feedbacks for'
 
 # PUBLIC OFFER PAGE
   offer:

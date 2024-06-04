@@ -2,7 +2,7 @@ uk:
   devise:
     login: 'Увійти'
     sign_up: 'Зареєструватися'
-    edit: 'Редагувати'
+    edit: 'Редагувати профіль'
     new_password: 'Новий пароль'
     forgot_password: 'Забули свій пароль?'
     change_password: 'Змінити пароль'

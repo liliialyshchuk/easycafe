@@ -1,0 +1,13 @@
+<div class="welcome-page1">
+    <div class="container">
+        <h2 class="center"> <%= t('feedback.feedback_new') %></h2>
+
+        <%= render "form", feedback: @feedback %>
+
+        <br>
+        <div class="center">
+            <%= link_to t('menu.button.back_to_menu'), dishes_path, class: 'waves-effect waves-light btn-small' %>
+        </div>
+        <br>
+    </div>
+</div>

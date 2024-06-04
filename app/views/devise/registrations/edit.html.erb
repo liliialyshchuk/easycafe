@@ -5,46 +5,47 @@
       <div class="row center sign-up-form">
         <div class="col s12 l12">
           <div class="card-panel">
-            <h3 class="header"><%=t('devise.edit') %> <%= resource_name.to_s.humanize %></h3
+            <h3 class="header"><%= t('devise.edit') %> <%= resource_name.to_s.humanize %></h3
               <div class="row">
 
 
                 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
 
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-                      <%= f.label :email %>
-                    </div>
+                  <div class="field form-group left-align">
+                    <%= f.label :email, "Email:", style: "display: block" %>
+                    <%= f.email_field :email, class: "form-control", placeholder: t('devise.placeholder.enter_your_email'), autofocus: true, autocomplete: "email"  %>
                   </div>
+
+                  <br>
 
                   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
                     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
                   <% end %>
 
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <%= f.password_field :password, placeholder: t('devise.placeholder.leave_blank_password'), autocomplete: "new-password" %>
-                      <% if @minimum_password_length %>
-                        <br />
-                        <em><%= @minimum_password_length %> <%= t('devise.placeholder.minimum_charachers') %></em>
-                      <% end %>
-                      <%= f.label :password %> 
-                    </div>
+                  <div class="field form-group left-align">
+                    <%= f.label :password, "Password", style: "display: block"  %> 
+                    <%= f.password_field :password, class: "form-control", placeholder: t('devise.placeholder.leave_blank_password'), autofocus: true, autocomplete: "new-password" %>
+                    <% if @minimum_password_length %>
+                      <br/>
+                      <em><%= @minimum_password_length %> <%= t('devise.placeholder.minimum_charachers') %></em>
+                    <% end %>
                   </div>
 
-                  <div class="row">
-                    <div class="input-field col s12">
-                    <%= f.password_field :password_confirmation, placeholder: t('devise.placeholder.confirm_password'), autocomplete: "new-password" %>
-                    <%= f.label :password_confirmation %>
-                    </div>
+                  <br>
+
+                  <div class="field form-group left-align">
+                    <%= f.label :password_confirmation, "Password confirmation:", style: "display: block" %>
+                    <%= f.password_field :password_confirmation, class: "form-control", placeholder: t('devise.placeholder.confirm_password'), autofocus: true, autocomplete: "new-password"  %>
                   </div>
 
-                  <div class="row">
-                    <div class="input-field col s12">
-                    <%= f.password_field :current_password, placeholder: t('devise.placeholder.repeat_your_password'), autocomplete: "current-password" %>
-                    <%= f.label :current_password %> 
+                  <br>
+
+                  <div class="field form-group left-align">
+                    <%= f.label :current_password, "Current password:", style: "display: block" %>
+                    <%= f.password_field :current_password, class: "form-control", placeholder: t('devise.placeholder.enter_your_password'), autofocus: true, autocomplete: "current-password"  %>
                   </div>
+
+                  <br>
 
                   <div class="row">
                     <div class="input-field col s12">
@@ -56,9 +57,9 @@
                   
                 <% end %>
 
-                <div class="waves-effect waves-light btn-small">
-                  <%= link_to t('devise.button.back'), root_path %>
-                </div>
+              <div class="center">
+                  <%= link_to t('devise.button.back'), root_path, class: 'waves-effect waves-light btn-small' %>
+              </div>
 
               </div>
           </div>
