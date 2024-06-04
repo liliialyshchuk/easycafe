@@ -17,9 +17,17 @@
     <div class> 
       
         <div class="nav-wrapper">     
-            <%= link_to t('site_name'),root_path, class: "brand-logo left" %>
+            <%# <%= link_to t('site_name'),root_path, class: "brand-logo left" %> 
+            <%# <a> <i class="material-icons orange-text left">local_cafe</i> </a>
+            <a> <i class="material-icons orange-text left">local_dining</i> </a>
+            <a> <i class="material-icons orange-text left">local_bar</i> </a>
+            <a> <i class="material-icons orange-text left">local_pizza</i> </a> %>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
+                <li> <i class="material-icons orange-text left">local_cafe</i> </li>
+                <li> <i class="material-icons red-text left">local_dining</i> </li>
+                <li> <i class="material-icons yellow-text left">local_bar</i> </li>
+                <li> <i class="material-icons orange-text left">local_pizza</i> </li>
                 <li><%= link_to 'EN', url_for(locale: :en), class: 'btn-floating btn-small waves-effect waves-light' %></li>
                 <li><%= link_to 'UA', url_for(locale: :uk), class: 'btn-floating btn-small waves-effect waves-light'  %></li>        
                 <li><%= link_to t('header.menu.home'), root_path %></li>
