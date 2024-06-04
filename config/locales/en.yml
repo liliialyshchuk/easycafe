@@ -1,6 +1,19 @@
 en:
   site_name: 'Sunny Cafe'
 
+  devise:
+    enter_your_password: 'Enter your password'
+    confirm_password: 'Confirm your password'
+    new_password: 'Enter new password'
+    confirm_new_password: 'Confirm new password'
+    enter_your_email: 'Enter your Email'
+    login: 'Login'
+    sign_up: 'Sign up'
+    edit: 'Edit'
+    update_profile: 'Update profile'
+    back: 'Back'
+    log_in: 'Log In'
+
   header:
     menu:
       home: 'Home'

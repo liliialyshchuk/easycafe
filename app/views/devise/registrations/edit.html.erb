@@ -5,7 +5,7 @@
       <div class="row center sign-up-form">
         <div class="col s12 l12">
           <div class="card-panel">
-            <h3 class="header"><%= t('devise.edit') %> <%= resource_name.to_s.humanize %></h3
+            <h3 class="header"><%= t('devise.edit') %> </h3
               <div class="row">
 
 
@@ -13,7 +13,7 @@
 
                   <div class="field form-group left-align">
                     <%= f.label :email, "Email:", style: "display: block" %>
-                    <%= f.email_field :email, class: "form-control", placeholder: t('devise.placeholder.enter_your_email'), autofocus: true, autocomplete: "email"  %>
+                    <%= f.email_field :email, class: "form-control", placeholder: t('devise.enter_your_email'), autofocus: true, autocomplete: "email"  %>
                   </div>
 
                   <br>
@@ -24,7 +24,7 @@
 
                   <div class="field form-group left-align">
                     <%= f.label :password, "Password", style: "display: block"  %> 
-                    <%= f.password_field :password, class: "form-control", placeholder: t('devise.placeholder.leave_blank_password'), autofocus: true, autocomplete: "new-password" %>
+                    <%= f.password_field :password, class: "form-control", placeholder: t('devise.new_password'), autofocus: true, autocomplete: "new-password" %>
                     <% if @minimum_password_length %>
                       <br/>
                       <em><%= @minimum_password_length %> <%= t('devise.placeholder.minimum_charachers') %></em>
@@ -35,14 +35,14 @@
 
                   <div class="field form-group left-align">
                     <%= f.label :password_confirmation, "Password confirmation:", style: "display: block" %>
-                    <%= f.password_field :password_confirmation, class: "form-control", placeholder: t('devise.placeholder.confirm_password'), autofocus: true, autocomplete: "new-password"  %>
+                    <%= f.password_field :password_confirmation, class: "form-control", placeholder: t('devise.confirm_new_password'), autofocus: true, autocomplete: "new-password"  %>
                   </div>
 
                   <br>
 
                   <div class="field form-group left-align">
                     <%= f.label :current_password, "Current password:", style: "display: block" %>
-                    <%= f.password_field :current_password, class: "form-control", placeholder: t('devise.placeholder.enter_your_password'), autofocus: true, autocomplete: "current-password"  %>
+                    <%= f.password_field :current_password, class: "form-control", placeholder: t('devise.enter_your_password'), autofocus: true, autocomplete: "current-password"  %>
                   </div>
 
                   <br>
@@ -50,7 +50,7 @@
                   <div class="row">
                     <div class="input-field col s12">
                       <div class="actions">
-                        <%= f.button t('devise.button.update_profile'), class: "waves-effect waves-light btn-small" %>
+                        <%= f.button t('devise.update_profile'), class: "waves-effect waves-light btn-small" %>
                       </div>
                     </div>
                   </div>
@@ -58,7 +58,7 @@
                 <% end %>
 
               <div class="center">
-                  <%= link_to t('devise.button.back'), root_path, class: 'waves-effect waves-light btn-small' %>
+                  <%= link_to t('devise.back'), root_path, class: 'waves-effect waves-light btn-small' %>
               </div>
 
               </div>

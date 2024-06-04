@@ -2,9 +2,9 @@
 
 en:
   devise:
-    login: 'Login'
-    sign_up: 'Sign up'
-    edit: 'Edit'
+    # login: 'Login'
+    # sign_up: 'Sign up'
+    # edit: 'Edit'
     new_password: 'New password'
     forgot_password: 'Forgot your password?'
     change_password: 'Change your password'

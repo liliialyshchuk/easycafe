@@ -1,6 +1,19 @@
 uk:
   site_name: 'Sunny Cafe'
 
+  devise:
+    enter_your_password: 'Введіть свій пароль'
+    confirm_password: 'Підтвердіть свій пароль'
+    new_password: 'Введіть новий пароль'
+    confirm_new_password: 'Підтвердіть новий пароль'
+    enter_your_email: 'Введіть свою електронну адресу'
+    login: 'Увійти'
+    sign_up: 'Реєстрація'
+    edit: 'Редагувати профіль'
+    update_profile: 'Оновити профіль'
+    back: 'Назад'
+    log_in: 'Увійти'
+
   header:
     menu:
       home: 'Дім'

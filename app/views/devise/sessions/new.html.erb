@@ -13,14 +13,14 @@
                  
                   <div class="field form-group left-align">
                     <%= f.label :email, "Email:", style: "display: block" %>
-                    <%= f.email_field :email, class: "form-control", placeholder: t('devise.placeholder.enter_your_email'), autofocus: true, autocomplete: "email"  %>
+                    <%= f.email_field :email, class: "form-control", placeholder: t('devise.enter_your_email'), autofocus: true, autocomplete: "email"  %>
                   </div>
 
                   <br>
 
                   <div class="field form-group left-align">
                     <%= f.label :password, "Password:", style: "display: block" %>
-                    <%= f.password_field :password, class: "form-control", placeholder: t('devise.placeholder.enter_your_password_6'), autofocus: true, autocomplete: "password"  %>
+                    <%= f.password_field :password, class: "form-control", placeholder: t('devise.enter_your_password'), autofocus: true, autocomplete: "password"  %>
                   </div>
 
                   <br>
@@ -28,7 +28,7 @@
                   <div class="row">
                     <div class="input-field col s12">
                       <div class="actions">
-                        <%= f.button t('devise.button.log_in'), class: "waves-effect waves-light btn-small" %>
+                        <%= f.button t('devise.log_in'), class: "waves-effect waves-light btn-small" %>
                       </div>
                     </div>
                   </div>
