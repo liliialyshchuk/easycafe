@@ -9,7 +9,7 @@ class DishesController < ApplicationController
         end
 
         @dishes = dishes.paginate(page: params[:page], per_page:9)
- 
+        @category_name = Category.find(params[:category_id]).name if params[:category_id]
     end
     
     def show
