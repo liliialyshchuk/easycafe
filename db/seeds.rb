@@ -8,3 +8,15 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+
+
+110.times do
+  Dish.create(
+    short_name: Faker::Food.dish,
+    description: Faker::Food.description,
+    price: Faker::Number.within(range: 5..50),
+    dish_image: Faker::LoremFlickr.image(search_terms: ['food']),
+    category_id: rand(10),
+  )
+end
+
