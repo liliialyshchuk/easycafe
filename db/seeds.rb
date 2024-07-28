@@ -19,5 +19,5 @@ AdminUser.create!(email: 'admin@example.com', password: 'password', password_con
     category_id: rand(10),
   )
 end
- 
+  
 
