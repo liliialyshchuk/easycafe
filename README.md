@@ -9,7 +9,7 @@ User authentication implemented with Devise Gem.
 AWS S3 Active Storage connected for uploading files. 
 Translations are managed through the use of locale files, which store translated text for UA and EN languages. 
 Framework Materialize CSS added and used to develop the system of design.
-
+ 
 Project description: Web-based application - online restaurant menu. 
 
 Unauthorized users can:
